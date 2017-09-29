@@ -1,0 +1,217 @@
+blocksize: 500
+filename: kline-jarrett.au
+Message sent from client: $abcABC1234$kline-jarrett.au
+creating file: kline-jarrett.au
+Total Bytes read: 2898266
+Elapsed Time(msec): 19.338000
+Throughput(bytes/msec): 149874.133830
+
+blocksize: 1000
+filename: kline-jarrett.au
+Message sent from client: $abcABC1234$kline-jarrett.au
+creating file: kline-jarrett.au
+Total Bytes read: 2898266
+Elapsed Time(msec): 12.252000
+Throughput(bytes/msec): 236554.521711
+
+blocksize: 1500
+filename: kline-jarrett.au
+Message sent from client: $abcABC1234$kline-jarrett.au
+creating file: kline-jarrett.au
+Total Bytes read: 2898266
+Elapsed Time(msec): 9.251000
+Throughput(bytes/msec): 313292.184629
+
+blocksize: 2000
+filename: kline-jarrett.au
+Message sent from client: $abcABC1234$kline-jarrett.au
+creating file: kline-jarrett.au
+Total Bytes read: 2898266
+Elapsed Time(msec): 8.071000
+Throughput(bytes/msec): 359096.270598
+
+blocksize: 2500
+filename: kline-jarrett.au
+Message sent from client: $abcABC1234$kline-jarrett.au
+creating file: kline-jarrett.au
+Total Bytes read: 2898266
+Elapsed Time(msec): 7.118000
+Throughput(bytes/msec): 407174.206238
+
+blocksize: 10000
+filename: kline-jarrett.au
+Message sent from client: $abcABC1234$kline-jarrett.au
+creating file: kline-jarrett.au
+Total Bytes read: 2898266
+Elapsed Time(msec): 4.703000
+Throughput(bytes/msec): 616258.983627
+
+blocksize: 13000
+filename: kline-jarrett.au
+Message sent from client: $abcABC1234$kline-jarrett.au
+creating file: kline-jarrett.au
+Total Bytes read: 2898266
+Elapsed Time(msec): 4.497000
+Throughput(Kbytes/sec): 644488.770291
+
+blocksize: 15000
+filename: kline-jarrett.au
+Message sent from client: $abcABC1234$kline-jarrett.au
+creating file: kline-jarrett.au
+Total Bytes read: 2898266
+Elapsed Time(msec): 4.402000
+Throughput(bytes/msec): 658397.546570
+
+blocksize: 16000
+filename: kline-jarrett.au
+Message sent from client: $abcABC1234$kline-jarrett.au
+creating file: kline-jarrett.au
+Total Bytes read: 2898266
+Elapsed Time(msec): 4.430000
+Throughput(Kbytes/sec): 654236.117381
+
+blocksize: 18000
+filename: kline-jarrett.au
+Message sent from client: $abcABC1234$kline-jarrett.au
+creating file: kline-jarrett.au
+Total Bytes read: 2898266
+Elapsed Time(msec): 4.416000
+Throughput(Kbytes/sec): 656310.235507
+sslab01 103 $ rm kline-jarrett.au
+sslab01 104 $ ./fileclient2 sslab01.cs.purdue.edu 10021 abcABC1234 kline-jarrett.au configfile.dat
+blocksize: 18000
+filename: kline-jarrett.au
+Message sent from client: $abcABC1234$kline-jarrett.au
+creating file: kline-jarrett.au
+Total Bytes read: 2898266
+Elapsed Time(msec): 5.034000
+Throughput(Kbytes/sec): 575738.180373
+sslab01 105 $ rm kline-jarrett.au
+sslab01 106 $ ./fileclient2 sslab01.cs.purdue.edu 10021 abcABC1234 kline-jarrett.au configfile.dat
+blocksize: 18000
+filename: kline-jarrett.au
+Message sent from client: $abcABC1234$kline-jarrett.au
+creating file: kline-jarrett.au
+Total Bytes read: 2898266
+Elapsed Time(msec): 1.174000
+Throughput(Kbytes/sec): 2468710.391823
+
+blocksize: 20000
+filename: kline-jarrett.au
+Message sent from client: $abcABC1234$kline-jarrett.au
+creating file: kline-jarrett.au
+Total Bytes read: 2898266
+Elapsed Time(msec): 4.428000
+Throughput(Kbytes/sec): 654531.616983
+sslab01 189 $ rm kline-jarrett.au
+sslab01 190 $ ./fileclient sslab01.cs.purdue.edu 10021 abcABC1234 kline-jarrett.au configfile.dat
+blocksize: 20000
+filename: kline-jarrett.au
+Message sent from client: $abcABC1234$kline-jarrett.au
+creating file: kline-jarrett.au
+Total Bytes read: 2898266
+Elapsed Time(msec): 4.359000
+Throughput(Kbytes/sec): 664892.406515
+sslab01 191 $ rm kline-jarrett.au
+sslab01 192 $ ./fileclient sslab01.cs.purdue.edu 10021 abcABC1234 kline-jarrett.au configfile.dat
+blocksize: 20000
+filename: kline-jarrett.au
+Message sent from client: $abcABC1234$kline-jarrett.au
+creating file: kline-jarrett.au
+Total Bytes read: 2898266
+Elapsed Time(msec): 4.372000
+Throughput(Kbytes/sec): 662915.370540
+sslab01 193 $ rm kline-jarrett.au
+sslab01 194 $ ./fileclient sslab01.cs.purdue.edu 10021 abcABC1234 kline-jarrett.au configfile.dat
+blocksize: 20000
+filename: kline-jarrett.au
+Message sent from client: $abcABC1234$kline-jarrett.au
+creating file: kline-jarrett.au
+Total Bytes read: 2898266
+Elapsed Time(msec): 2.530000
+Throughput(Kbytes/sec): 1145559.683794
+
+
+blocksize: 25000
+filename: kline-jarrett.au
+Message sent from client: $abcABC1234$kline-jarrett.au
+creating file: kline-jarrett.au
+Total Bytes read: 2898266
+Elapsed Time(msec): 4.317000
+Throughput(Kbytes/sec): 671361.130415
+sslab01 203 $ rm kline-jarrett.au
+sslab01 204 $ ./fileclient sslab01.cs.purdue.edu 10021 abcABC1234 kline-jarrett.au configfile.dat
+blocksize: 25000
+filename: kline-jarrett.au
+Message sent from client: $abcABC1234$kline-jarrett.au
+creating file: kline-jarrett.au
+Total Bytes read: 2898266
+Elapsed Time(msec): 4.329000
+Throughput(Kbytes/sec): 669500.115500
+sslab01 205 $ rm kline-jarrett.au
+sslab01 206 $ ./fileclient sslab01.cs.purdue.edu 10021 abcABC1234 kline-jarrett.au configfile.dat
+blocksize: 25000
+filename: kline-jarrett.au
+Message sent from client: $abcABC1234$kline-jarrett.au
+creating file: kline-jarrett.au
+Total Bytes read: 2898266
+Elapsed Time(msec): 4.402000
+Throughput(Kbytes/sec): 658397.546570
+sslab01 207 $ rm kline-jarrett.au
+sslab01 208 $ ./fileclient sslab01.cs.purdue.edu 10021 abcABC1234 kline-jarrett.au configfile.dat
+blocksize: 25000
+filename: kline-jarrett.au
+Message sent from client: $abcABC1234$kline-jarrett.au
+creating file: kline-jarrett.au
+Total Bytes read: 2898266
+Elapsed Time(msec): 2.464000
+Throughput(Kbytes/sec): 1176244.318182
+sslab01 209 $ rm kline-jarrett.au
+sslab01 210 $ ./fileclient sslab01.cs.purdue.edu 10021 abcABC1234 kline-jarrett.au configfile.dat
+blocksize: 25000
+filename: kline-jarrett.au
+Message sent from client: $abcABC1234$kline-jarrett.au
+creating file: kline-jarrett.au
+Total Bytes read: 2898266
+Elapsed Time(msec): 4.266000
+Throughput(Kbytes/sec): 679387.248008
+
+blocksize: 50000
+filename: kline-jarrett.au
+Message sent from client: $abcABC1234$kline-jarrett.au
+creating file: kline-jarrett.au
+Total Bytes read: 2898266
+Elapsed Time(msec): 4.331000
+Throughput(Kbytes/sec): 669190.948973
+sslab01 227 $ rm kline-jarrett.au
+sslab01 228 $ ./fileclient sslab01.cs.purdue.edu 10021 abcABC1234 kline-jarrett.au configfile.dat
+blocksize: 50000
+filename: kline-jarrett.au
+Message sent from client: $abcABC1234$kline-jarrett.au
+creating file: kline-jarrett.au
+Total Bytes read: 2898266
+Elapsed Time(msec): 2.587000
+Throughput(Kbytes/sec): 1120319.288751
+sslab01 229 $ rm kline-jarrett.au
+sslab01 230 $ ./fileclient sslab01.cs.purdue.edu 10021 abcABC1234 kline-jarrett.au configfile.dat
+blocksize: 50000
+filename: kline-jarrett.au
+Message sent from client: $abcABC1234$kline-jarrett.au
+creating file: kline-jarrett.au
+Total Bytes read: 2898266
+Elapsed Time(msec): 4.067000
+Throughput(Kbytes/sec): 712629.948365
+sslab01 231 $ rm kline-jarrett.au
+sslab01 232 $ ./fileclient sslab01.cs.purdue.edu 10021 abcABC1234 kline-jarrett.au configfile.dat
+blocksize: 50000
+filename: kline-jarrett.au
+Message sent from client: $abcABC1234$kline-jarrett.au
+creating file: kline-jarrett.au
+Total Bytes read: 2898266
+Elapsed Time(msec): 4.022000
+Throughput(Kbytes/sec): 720603.182496
+
+
+
+
+

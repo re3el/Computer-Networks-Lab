@@ -1,0 +1,2 @@
+1.a What happens if the return value of execlp() is not checked and you give an invalid command, say, lssss, as input to the shell? 
+Ans. If the return value of execlp() is not checked and we give an invalid command, the child process is not terminated and the next process(command we enter) gets spawned with the parent set as the non-terminated child process.

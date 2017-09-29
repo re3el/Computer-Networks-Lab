@@ -1,0 +1,1 @@
+for f in {200..300}; do cp fifoclient.c multipleFiles/file$f.c; done;

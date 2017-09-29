@@ -1,0 +1,42 @@
+1.a What happens if the return value of execlp() is not checked and you give an invalid command, say, lssss, as input to the shell? 
+Ans. If the return value of execlp() is not checked and we give an invalid command, the child process is not terminated and the next process(command we enter) gets spawned with the parent set as the non-terminated child process.
+
+Ex: 
+
+Upon entering 'ls', a valid command (17467 is the parent process_id )
+[17467]$ ls 
+
+After the execution, the child process gets terminated as can be seen below(there is no other process running other than the parent process)
+sslab03 32 $ ps -ef | grep 17467 
+sdorbala 17467 16865  0 14:41 pts/0    00:00:00 ./a.out
+sdorbala 17470 17450  0 14:42 pts/1    00:00:00 grep 17467
+
+Now, if we enter 'lsss', an invalid command (17467 is the parent process_id )
+[17467]$ lss
+
+After the execution, the child process(17471) is not terminated and now there are two processes running(child and parent)
+sslab03 34 $ ps -ef | grep 17467
+sdorbala 17467 16865  0 14:41 pts/0    00:00:00 ./a.out
+sdorbala 17471 17467  0 14:42 pts/0    00:00:00 ./a.out
+sdorbala 17478 17450  0 14:42 pts/1    00:00:00 grep 17467
+
+
+1.b What happens if the parent process does not perform waitpid() and immediately returns to the beginning of the while-loop? 
+Ans. If the parent process doesn't perform waitpid(), then the child that got terminated turns into a zombie implying that the resources alloted to the child processes are not released and are stored in the kernel with minimal set of information. They are stored as slots in kernel process table and once these slots are all occupied, no further processes could be created. Also, the next processes are all created with the child process set as the new parent process. 
+
+19463 - parent process; 19466 - child process that acts as a parent for the next operation
+sdorbala 19463 19299  0 19:14 pts/2    00:00:00 ./a.out
+sdorbala 19466 19463  0 19:14 pts/2    00:00:00 [ls] <defunct>
+sdorbala 19470 19463  0 19:15 pts/2    00:00:00 [ls] <defunct>
+ 
+And, if the parent process performs waitpid then the next processes are all created with the same parent process.
+
+1.c If the concurrent server were a file server that receives client requests from processes on the same host/OS (or over a network), why is performing waitpid() as a blocking call from within the parent process not a valid approach? Describe an asynchronous method for performing waitpid() so child processes are prevented from becoming zombies and their exit status can be checked.
+Ans. Performing waitpid() is not a valid approach as it blocks the parent process from moving forward until the child process gets terminated. To prevent this blocking call, asynchronous method using SIGCHLD handler(calls waitpid on pid: -1) can be used.
+
+waitpid with WNOHANG returns the status and prevents blocking; it returns 0 if the child is not terminated. Is it the same with SIGCHLD?
+
+
+1.d 
+a)fgets() could lead to buffer overflow when the buffer size mentioned in the fgets function exceeds the buffer size of the variable initialized.
+b)fgets() includes newline which is not an input for the buffer. We need to include a wrapper that actually deletes that.

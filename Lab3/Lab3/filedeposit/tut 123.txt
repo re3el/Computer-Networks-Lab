@@ -1,0 +1,16 @@
+pid_t waitpid(pid_t pid, int *statusPtr, int options);
+
+waitpid suspends the calling process until a specified process terminates. When the specified process ends, status information from the terminating process is stored in the location pointed to by statusPtr and the calling process resumes execution. If the specified process has already ended when the waitpid function is called and the system has status information, the return from waitpid occurs immediately. A return from the waitpid function also occurs if a signal is received and is not ignored.
+
+pid
+specifies a process, normally a child process, that the calling process waits for. The process is identified as follows:
+If pid is greater than 0, the calling process waits for the process whose process identification number (PID) is equal to the value specified by pid.
+If pid is equal to 0, the calling process waits for the process whose process group ID is equal to the PID of the calling process.
+If pid is equal to -1, the calling process waits for any child process to terminate.
+If pid is less than -1, the calling process waits for the process whose process group ID is equal to the absolute value of pid.
+
+statusPtr
+is a pointer to the location where status information for the terminating process is to be stored
+
+WNOHANG
+causes the call to waitpid to return status information immediately, without waiting for the specified process to terminate. Normally, a call to waitpid causes the calling process to be blocked until status information from the specified process is available; the WNOHANG option prevents the calling process from being blocked. If status information is not available, waitpid returns a 0.
